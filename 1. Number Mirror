@@ -1,0 +1,36 @@
+Number Mirror
+-------------
+
+Problem
+Write a program that takes a number N as the input, and prints it to the output.
+
+Input Format
+The only line contains a single integer.
+
+Output Format
+Output the answer in a single line.
+
+Sample 1:
+Input
+123
+
+Output
+123
+
+
+Code or Output
+--------------
+
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		// your code goes here
+		int number = int.Parse(Console.ReadLine());
+
+        // Print the number
+        Console.WriteLine(number);
+	}
+}
