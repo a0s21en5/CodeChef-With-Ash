@@ -40,3 +40,29 @@ Test case 3: The sum of numbers on the dice is 4+2=6  which is equal to 6. Thus,
 
 Test case 4: The sum of numbers on the dice is 2+6=8 which is greater than 6. Thus, the turn is good.
 
+
+
+Code or Output
+--------------
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int T = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < T; i++)
+        {
+            string[] inputs = Console.ReadLine().Split();
+            int X = int.Parse(inputs[0]);
+            int Y = int.Parse(inputs[1]);
+
+            if (X + Y > 6)
+                Console.WriteLine("YES");
+            else
+                Console.WriteLine("NO");
+        }
+    }
+}
